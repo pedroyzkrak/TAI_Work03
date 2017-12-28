@@ -51,16 +51,7 @@ def results():
     print("\nFace Recognition with ZLIB")
     # dictionary containing the bytes of each file for each subject in the references subset
     reference_values = get_references_values()
-    results = test_ncd_similarity(reference_values)
-    accuracy = 0
-    size = len(results) * 7
-    for subject, test_files in results.items():
-        print("Subject {}".format(re.sub("s", "", subject)))
-        for test_file, result in test_files.items():
-            print("\t{}: Subject {}, NCD: {}".format(test_file, re.sub("s", "", result[0]), result[1]))
-            if subject == result[0]:
-                accuracy += 1
-    print("Positive Results: {}, Accuracy: {}%".format(accuracy, round(accuracy / size * 100, 1)))
+    return test_ncd_similarity(reference_values)
 
 
 if __name__ == '__main__':
