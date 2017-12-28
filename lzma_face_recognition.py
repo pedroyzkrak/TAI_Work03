@@ -50,7 +50,8 @@ def test_ncd_similarity(reference_values):
     return test_dict
 
 
-def main():
+def results():
+    print("\nFace Recognition with LZMA")
     # dictionary containing the bytes of each file for each subject in the references subset
     reference_values = get_references_values()
     results = test_ncd_similarity(reference_values)
@@ -66,4 +67,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    results()
