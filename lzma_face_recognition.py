@@ -1,4 +1,7 @@
-import os, gzip, re
+import os, lzma, re
+
+# TODO ignorar compressor?
+# LZMA demorou quase 30 minutos alcançar uma accuracy de 13.2% ...
 
 
 def get_references_values():
@@ -16,15 +19,15 @@ def get_references_values():
 
 
 def calculate_best_ncd(ref_dict, test_original_str):
-    test_compressed_str_size = len(gzip.compress(test_original_str))
+    test_compressed_str_size = len(lzma.compress(test_original_str))
     best_ncd = 5
     best_subject = ""
     for subject, reference_set in ref_dict.items():
         ncd = 0
         for reference in reference_set:
-            ncd += (len(gzip.compress((b''.join([reference[1], test_original_str])))) -
-                    min(test_compressed_str_size, len(gzip.compress((reference[1]))))) / \
-                   (max(test_compressed_str_size, len(gzip.compress((reference[1])))))
+            ncd += (len(lzma.compress((b''.join([reference[1], test_original_str])))) -
+                    min(test_compressed_str_size, len(lzma.compress((reference[1]))))) / \
+                   (max(test_compressed_str_size, len(lzma.compress((reference[1])))))
         ncd = ncd / 3.0
         if best_ncd > ncd:
             best_ncd = ncd
