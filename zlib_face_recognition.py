@@ -1,4 +1,4 @@
-import os, zlib, re
+import os, zlib
 
 
 def get_references_values():

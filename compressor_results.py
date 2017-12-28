@@ -2,12 +2,13 @@ from gzip_face_recognition import results as gzip_results
 from bzip2_face_recognition import results as bzip2_results
 from zlib_face_recognition import results as zlib_results
 from lzma_face_recognition import results as lzma_results
+from lz4_face_recognition import results as lz4_results
 from time import time as tm
 import re
 
 
 def main():
-    compressor_results = [gzip_results, bzip2_results, zlib_results, lzma_results]
+    compressor_results = [gzip_results, bzip2_results, zlib_results, lzma_results, lz4_results]
     for results in compressor_results:
         accuracy = 0
         start = tm()

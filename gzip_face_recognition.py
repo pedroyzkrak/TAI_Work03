@@ -1,4 +1,4 @@
-import os, gzip, re
+import os, gzip
 
 
 def get_references_values():

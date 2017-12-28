@@ -1,4 +1,4 @@
-import os, bz2, re
+import os, bz2
 
 
 def get_references_values():
