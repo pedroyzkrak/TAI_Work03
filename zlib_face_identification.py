@@ -47,7 +47,7 @@ def test_ncd_similarity(reference_values):
     return test_dict
 
 
-def results():
+def zlib_results():
     print("\nFace Identification with ZLIB")
     # dictionary containing the bytes of each file for each subject in the references subset
     reference_values = get_references_values()
@@ -55,4 +55,4 @@ def results():
 
 
 if __name__ == '__main__':
-    results()
+    zlib_results()
