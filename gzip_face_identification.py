@@ -39,11 +39,11 @@ def test_ncd_similarity(reference_values):
         for file in os.listdir(os.path.join(source, dirs)):
             with open(os.path.join(source, dirs, file), 'rb') as original:
                 original_str = original.read()
-                subject, best_ncd = calculate_best_ncd(reference_values, original_str)
+                best_subject, best_ncd = calculate_best_ncd(reference_values, original_str)
                 if dirs not in test_dict:
-                    test_dict[dirs] = {file: (subject, best_ncd)}
+                    test_dict[dirs] = {file: (best_subject, best_ncd)}
                 else:
-                    test_dict[dirs][file] = (subject, best_ncd)
+                    test_dict[dirs][file] = (best_subject, best_ncd)
     return test_dict
 
 
