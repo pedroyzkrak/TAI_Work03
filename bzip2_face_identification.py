@@ -1,4 +1,4 @@
-import os, gzip
+import os, bz2
 
 
 def get_references_values():
@@ -16,15 +16,15 @@ def get_references_values():
 
 
 def calculate_best_ncd(ref_dict, test_original_str):
-    test_compressed_str_size = len(gzip.compress(test_original_str))
+    test_compressed_str_size = len(bz2.compress(test_original_str))
     best_ncd = 5
     best_subject = ""
     for subject, reference_set in ref_dict.items():
         ncd = 0
         for reference in reference_set:
-            ncd += (len(gzip.compress((b''.join([reference[1], test_original_str])))) -
-                    min(test_compressed_str_size, len(gzip.compress((reference[1]))))) / \
-                   (max(test_compressed_str_size, len(gzip.compress((reference[1])))))
+            ncd += (len(bz2.compress((b''.join([reference[1], test_original_str])))) -
+                    min(test_compressed_str_size, len(bz2.compress((reference[1]))))) / \
+                   (max(test_compressed_str_size, len(bz2.compress((reference[1])))))
         ncd = ncd / 3.0
         if best_ncd > ncd:
             best_ncd = ncd
@@ -48,7 +48,7 @@ def test_ncd_similarity(reference_values):
 
 
 def results():
-    print("\nFace Recognition with GZIP")
+    print("\nFace Identification with BZIP2")
     # dictionary containing the bytes of each file for each subject in the references subset
     reference_values = get_references_values()
     return test_ncd_similarity(reference_values)
