@@ -1,0 +1,46 @@
+lz4_results metrics:
+
+             precision    recall  f1-score   support
+
+  Subject 1       0.15      0.57      0.24         7
+  Subject 2       0.37      1.00      0.54         7
+  Subject 3       0.00      0.00      0.00         7
+  Subject 4       0.50      0.14      0.22         7
+  Subject 5       0.10      0.29      0.14         7
+  Subject 6       0.00      0.00      0.00         7
+  Subject 7       1.00      0.14      0.25         7
+  Subject 8       0.15      1.00      0.26         7
+  Subject 9       0.00      0.00      0.00         7
+ Subject 10       0.00      0.00      0.00         7
+ Subject 11       0.00      0.00      0.00         7
+ Subject 12       0.00      0.00      0.00         7
+ Subject 13       0.13      1.00      0.23         7
+ Subject 14       0.00      0.00      0.00         7
+ Subject 15       0.00      0.00      0.00         7
+ Subject 16       0.00      0.00      0.00         7
+ Subject 17       0.00      0.00      0.00         7
+ Subject 18       0.67      0.29      0.40         7
+ Subject 19       1.00      0.29      0.44         7
+ Subject 20       0.00      0.00      0.00         7
+ Subject 21       0.00      0.00      0.00         7
+ Subject 22       0.00      0.00      0.00         7
+ Subject 23       0.00      0.00      0.00         7
+ Subject 24       0.40      0.86      0.55         7
+ Subject 25       0.25      0.86      0.39         7
+ Subject 26       0.12      0.29      0.17         7
+ Subject 27       0.00      0.00      0.00         7
+ Subject 28       0.00      0.00      0.00         7
+ Subject 29       0.11      0.29      0.16         7
+ Subject 30       0.45      0.71      0.56         7
+ Subject 31       0.00      0.00      0.00         7
+ Subject 32       0.00      0.00      0.00         7
+ Subject 33       0.00      0.00      0.00         7
+ Subject 34       1.00      1.00      1.00         7
+ Subject 35       0.00      0.00      0.00         7
+ Subject 36       0.00      0.00      0.00         7
+ Subject 37       0.00      0.00      0.00         7
+ Subject 38       0.00      0.00      0.00         7
+ Subject 39       0.00      0.00      0.00         7
+ Subject 40       0.50      0.14      0.22         7
+
+avg / total       0.17      0.22      0.14       280
