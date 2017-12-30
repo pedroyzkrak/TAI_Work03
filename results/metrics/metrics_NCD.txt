@@ -1,3 +1,141 @@
+gzip_results metrics:
+
+             precision    recall  f1-score   support
+
+  Subject 1       1.00      0.43      0.60         7
+  Subject 2       1.00      1.00      1.00         7
+  Subject 3       0.50      0.43      0.46         7
+  Subject 4       0.40      0.29      0.33         7
+  Subject 5       0.67      0.57      0.62         7
+  Subject 6       1.00      1.00      1.00         7
+  Subject 7       0.31      0.57      0.40         7
+  Subject 8       1.00      1.00      1.00         7
+  Subject 9       1.00      0.29      0.44         7
+ Subject 10       0.67      0.29      0.40         7
+ Subject 11       0.50      1.00      0.67         7
+ Subject 12       0.00      0.00      0.00         7
+ Subject 13       0.40      0.29      0.33         7
+ Subject 14       0.26      0.71      0.38         7
+ Subject 15       1.00      0.43      0.60         7
+ Subject 16       1.00      0.57      0.73         7
+ Subject 17       0.25      0.29      0.27         7
+ Subject 18       0.35      0.86      0.50         7
+ Subject 19       0.47      1.00      0.64         7
+ Subject 20       0.11      0.14      0.12         7
+ Subject 21       1.00      0.57      0.73         7
+ Subject 22       0.36      0.71      0.48         7
+ Subject 23       0.83      0.71      0.77         7
+ Subject 24       1.00      0.43      0.60         7
+ Subject 25       0.18      0.43      0.25         7
+ Subject 26       0.00      0.00      0.00         7
+ Subject 27       0.60      0.86      0.71         7
+ Subject 28       0.33      0.14      0.20         7
+ Subject 29       0.50      0.14      0.22         7
+ Subject 30       0.20      0.29      0.24         7
+ Subject 31       1.00      0.71      0.83         7
+ Subject 32       0.60      0.86      0.71         7
+ Subject 33       0.83      0.71      0.77         7
+ Subject 34       1.00      1.00      1.00         7
+ Subject 35       0.17      0.14      0.15         7
+ Subject 36       0.00      0.00      0.00         7
+ Subject 37       0.00      0.00      0.00         7
+ Subject 38       1.00      0.57      0.73         7
+ Subject 39       0.67      0.29      0.40         7
+ Subject 40       0.22      0.29      0.25         7
+
+avg / total       0.56      0.50      0.49       280
+bz2_results metrics:
+
+             precision    recall  f1-score   support
+
+  Subject 1       1.00      1.00      1.00         7
+  Subject 2       1.00      1.00      1.00         7
+  Subject 3       0.22      0.29      0.25         7
+  Subject 4       0.50      0.29      0.36         7
+  Subject 5       0.60      0.43      0.50         7
+  Subject 6       1.00      0.86      0.92         7
+  Subject 7       0.70      1.00      0.82         7
+  Subject 8       0.78      1.00      0.88         7
+  Subject 9       0.00      0.00      0.00         7
+ Subject 10       1.00      0.86      0.92         7
+ Subject 11       0.64      1.00      0.78         7
+ Subject 12       0.39      1.00      0.56         7
+ Subject 13       0.67      0.29      0.40         7
+ Subject 14       1.00      1.00      1.00         7
+ Subject 15       1.00      0.29      0.44         7
+ Subject 16       1.00      0.57      0.73         7
+ Subject 17       1.00      0.57      0.73         7
+ Subject 18       1.00      1.00      1.00         7
+ Subject 19       0.40      0.86      0.55         7
+ Subject 20       1.00      0.71      0.83         7
+ Subject 21       1.00      0.43      0.60         7
+ Subject 22       1.00      1.00      1.00         7
+ Subject 23       0.71      0.71      0.71         7
+ Subject 24       1.00      0.86      0.92         7
+ Subject 25       0.23      1.00      0.38         7
+ Subject 26       0.80      0.57      0.67         7
+ Subject 27       0.78      1.00      0.88         7
+ Subject 28       1.00      0.29      0.44         7
+ Subject 29       1.00      0.29      0.44         7
+ Subject 30       0.37      1.00      0.54         7
+ Subject 31       1.00      0.43      0.60         7
+ Subject 32       0.78      1.00      0.88         7
+ Subject 33       1.00      0.57      0.73         7
+ Subject 34       1.00      1.00      1.00         7
+ Subject 35       0.25      0.14      0.18         7
+ Subject 36       1.00      0.29      0.44         7
+ Subject 37       1.00      0.86      0.92         7
+ Subject 38       0.55      0.86      0.67         7
+ Subject 39       1.00      0.14      0.25         7
+ Subject 40       0.33      0.14      0.20         7
+
+avg / total       0.77      0.66      0.65       280
+zlib_results metrics:
+
+             precision    recall  f1-score   support
+
+  Subject 1       1.00      0.43      0.60         7
+  Subject 2       1.00      1.00      1.00         7
+  Subject 3       0.50      0.43      0.46         7
+  Subject 4       0.40      0.29      0.33         7
+  Subject 5       0.67      0.57      0.62         7
+  Subject 6       1.00      1.00      1.00         7
+  Subject 7       0.31      0.57      0.40         7
+  Subject 8       1.00      1.00      1.00         7
+  Subject 9       1.00      0.29      0.44         7
+ Subject 10       0.67      0.29      0.40         7
+ Subject 11       0.50      1.00      0.67         7
+ Subject 12       0.00      0.00      0.00         7
+ Subject 13       0.40      0.29      0.33         7
+ Subject 14       0.26      0.71      0.38         7
+ Subject 15       1.00      0.43      0.60         7
+ Subject 16       1.00      0.57      0.73         7
+ Subject 17       0.25      0.29      0.27         7
+ Subject 18       0.35      0.86      0.50         7
+ Subject 19       0.47      1.00      0.64         7
+ Subject 20       0.11      0.14      0.12         7
+ Subject 21       1.00      0.57      0.73         7
+ Subject 22       0.33      0.71      0.45         7
+ Subject 23       0.83      0.71      0.77         7
+ Subject 24       1.00      0.43      0.60         7
+ Subject 25       0.18      0.43      0.25         7
+ Subject 26       0.00      0.00      0.00         7
+ Subject 27       0.60      0.86      0.71         7
+ Subject 28       0.33      0.14      0.20         7
+ Subject 29       0.00      0.00      0.00         7
+ Subject 30       0.20      0.29      0.24         7
+ Subject 31       1.00      0.71      0.83         7
+ Subject 32       0.60      0.86      0.71         7
+ Subject 33       0.83      0.71      0.77         7
+ Subject 34       1.00      1.00      1.00         7
+ Subject 35       0.17      0.14      0.15         7
+ Subject 36       0.00      0.00      0.00         7
+ Subject 37       0.00      0.00      0.00         7
+ Subject 38       1.00      0.57      0.73         7
+ Subject 39       0.67      0.29      0.40         7
+ Subject 40       0.22      0.29      0.25         7
+
+avg / total       0.55      0.50      0.48       280
 lz4_results metrics:
 
              precision    recall  f1-score   support
@@ -44,3 +182,95 @@ lz4_results metrics:
  Subject 40       0.50      0.14      0.22         7
 
 avg / total       0.17      0.22      0.14       280
+lzma_results metrics:
+
+             precision    recall  f1-score   support
+
+  Subject 1       0.00      0.00      0.00         7
+  Subject 2       1.00      0.57      0.73         7
+  Subject 3       0.04      0.14      0.06         7
+  Subject 4       0.02      0.14      0.03         7
+  Subject 5       0.00      0.00      0.00         7
+  Subject 6       0.00      0.00      0.00         7
+  Subject 7       0.67      0.29      0.40         7
+  Subject 8       0.16      1.00      0.27         7
+  Subject 9       0.00      0.00      0.00         7
+ Subject 10       0.50      0.14      0.22         7
+ Subject 11       0.33      0.14      0.20         7
+ Subject 12       0.00      0.00      0.00         7
+ Subject 13       0.00      0.00      0.00         7
+ Subject 14       0.00      0.00      0.00         7
+ Subject 15       0.00      0.00      0.00         7
+ Subject 16       0.00      0.00      0.00         7
+ Subject 17       0.06      0.14      0.09         7
+ Subject 18       0.25      0.14      0.18         7
+ Subject 19       0.11      0.29      0.16         7
+ Subject 20       0.00      0.00      0.00         7
+ Subject 21       0.00      0.00      0.00         7
+ Subject 22       1.00      0.14      0.25         7
+ Subject 23       0.24      0.57      0.33         7
+ Subject 24       0.00      0.00      0.00         7
+ Subject 25       0.14      0.29      0.19         7
+ Subject 26       0.04      0.14      0.06         7
+ Subject 27       0.25      0.29      0.27         7
+ Subject 28       0.25      0.14      0.18         7
+ Subject 29       1.00      0.14      0.25         7
+ Subject 30       0.40      0.29      0.33         7
+ Subject 31       0.00      0.00      0.00         7
+ Subject 32       1.00      0.14      0.25         7
+ Subject 33       0.00      0.00      0.00         7
+ Subject 34       0.00      0.00      0.00         7
+ Subject 35       0.00      0.00      0.00         7
+ Subject 36       0.00      0.00      0.00         7
+ Subject 37       0.00      0.00      0.00         7
+ Subject 38       0.00      0.00      0.00         7
+ Subject 39       0.33      0.14      0.20         7
+ Subject 40       0.00      0.00      0.00         7
+
+avg / total       0.19      0.13      0.12       280
+brotli_results metrics:
+
+             precision    recall  f1-score   support
+
+  Subject 1       0.00      0.00      0.00         7
+  Subject 2       1.00      0.14      0.25         7
+  Subject 3       0.00      0.00      0.00         7
+  Subject 4       1.00      0.29      0.44         7
+  Subject 5       1.00      0.14      0.25         7
+  Subject 6       0.06      0.86      0.12         7
+  Subject 7       0.19      1.00      0.32         7
+  Subject 8       1.00      0.29      0.44         7
+  Subject 9       1.00      0.14      0.25         7
+ Subject 10       1.00      0.71      0.83         7
+ Subject 11       1.00      1.00      1.00         7
+ Subject 12       1.00      0.57      0.73         7
+ Subject 13       1.00      0.14      0.25         7
+ Subject 14       1.00      0.43      0.60         7
+ Subject 15       0.33      0.43      0.38         7
+ Subject 16       1.00      0.43      0.60         7
+ Subject 17       1.00      0.29      0.44         7
+ Subject 18       1.00      0.43      0.60         7
+ Subject 19       1.00      0.29      0.44         7
+ Subject 20       0.57      0.57      0.57         7
+ Subject 21       0.00      0.00      0.00         7
+ Subject 22       0.33      0.71      0.45         7
+ Subject 23       1.00      0.29      0.44         7
+ Subject 24       1.00      0.43      0.60         7
+ Subject 25       1.00      0.29      0.44         7
+ Subject 26       1.00      0.14      0.25         7
+ Subject 27       1.00      1.00      1.00         7
+ Subject 28       1.00      0.14      0.25         7
+ Subject 29       0.25      0.57      0.35         7
+ Subject 30       0.00      0.00      0.00         7
+ Subject 31       1.00      0.29      0.44         7
+ Subject 32       1.00      0.43      0.60         7
+ Subject 33       0.25      0.29      0.27         7
+ Subject 34       0.33      0.71      0.45         7
+ Subject 35       0.00      0.00      0.00         7
+ Subject 36       1.00      0.29      0.44         7
+ Subject 37       1.00      0.43      0.60         7
+ Subject 38       1.00      0.71      0.83         7
+ Subject 39       0.20      0.14      0.17         7
+ Subject 40       1.00      0.14      0.25         7
+
+avg / total       0.71      0.38      0.41       280

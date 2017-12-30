@@ -15,8 +15,7 @@ import numpy as np
 
 
 def main():
-    #compressor_results = [gzip_results, bz2_results, zlib_results, lz4_results, lzma_results, brotli_results]
-    compressor_results = [lz4_results]
+    compressor_results = [gzip_results, bz2_results, zlib_results, lz4_results, lzma_results, brotli_results]
     file_path = os.path.join(os.getcwd(), "results", "metrics", "metrics_NCD.txt")
     f = open(file_path, "w")
     for results in compressor_results:
@@ -41,9 +40,11 @@ def main():
         conf_matrix = conf_matrix.astype('float') / conf_matrix.sum(axis=1)[:, np.newaxis]
         plt.imshow(conf_matrix,cmap='binary', interpolation='None')
         plt.colorbar()
-        plt.step(x,x)
+        plt.step(x, x)
         plt.ylabel("Actual")
         plt.xlabel("Predicted")
+
+
 
         if not os.path.exists(os.path.join(os.getcwd(), "results", "conf_matrix")):
             os.makedirs(os.path.join(os.getcwd(), "results", "conf_matrix"))
@@ -52,6 +53,7 @@ def main():
         plt.savefig(os.path.join(os.getcwd(), "results", "conf_matrix", comp_name + "_confusion_matrix.png"))
         f.write("{} metrics:\n\n".format(comp_name))
         f.write(metrics)
+        plt.clf()
     f.close()
 
 if __name__ == '__main__':
