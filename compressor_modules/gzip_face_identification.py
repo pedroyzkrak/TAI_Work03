@@ -1,4 +1,4 @@
-import os, lzma
+import os, gzip
 
 
 def get_references_values():
@@ -16,18 +16,18 @@ def get_references_values():
 
 
 def calculate_best_ncd(ref_dict, test_original_str):
-    test_compressed_str_size = len(lzma.compress(test_original_str))
+    test_compressed_str_size = len(gzip.compress(test_original_str))
     best_ncd = 5
     best_subject = ""
     for subject, reference_set in ref_dict.items():
         ncd = 0
         for reference in reference_set:
-            ncd += (len(lzma.compress((b''.join([reference[1], test_original_str])))) -
-                    min(test_compressed_str_size, len(lzma.compress((reference[1]))))) / \
-                   (max(test_compressed_str_size, len(lzma.compress((reference[1])))))
-        ncd = ncd / 3.0
-        if best_ncd > ncd:
-            best_ncd = ncd
+            ncd += (len(gzip.compress((b''.join([reference[1], test_original_str])))) -
+                    min(test_compressed_str_size, len(gzip.compress((reference[1]))))) / \
+                   (max(test_compressed_str_size, len(gzip.compress((reference[1])))))
+        avg_ncd = ncd / len(reference_set)
+        if best_ncd > avg_ncd:
+            best_ncd = avg_ncd
             best_subject = subject
     return best_subject, best_ncd
 
@@ -47,12 +47,12 @@ def test_ncd_similarity(reference_values):
     return test_dict
 
 
-def lzma_results():
-    print("\nFace Identification with LZMA")
+def gzip_results():
+    print("\nFace Identification with GZIP")
     # dictionary containing the bytes of each file for each subject in the references subset
     reference_values = get_references_values()
     return test_ncd_similarity(reference_values)
 
 
 if __name__ == '__main__':
-    lzma_results()
+    gzip_results()

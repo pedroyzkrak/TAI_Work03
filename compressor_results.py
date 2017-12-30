@@ -1,17 +1,20 @@
-from gzip_face_identification import gzip_results
-from bzip2_face_identification import bz2_results
-from zlib_face_identification import zlib_results
-from lzma_face_identification import lzma_results
-from lz4_face_identification import lz4_results
-from brotli_face_identification import brotli_results
-import warnings
-warnings.filterwarnings("ignore")
+from compressor_modules.gzip_face_identification import gzip_results
+from compressor_modules.bzip2_face_identification import bz2_results
+from compressor_modules.zlib_face_identification import zlib_results
+from compressor_modules.lzma_face_identification import lzma_results
+from compressor_modules.lz4_face_identification import lz4_results
+from compressor_modules.brotli_face_identification import brotli_results
+
 from sklearn.metrics import confusion_matrix, classification_report
 
 from time import time as tm
-import re, os
+import re
+import os
 import matplotlib.pyplot as plt
 import numpy as np
+import warnings
+
+warnings.filterwarnings("ignore")
 
 
 def main():
@@ -35,16 +38,14 @@ def main():
         print("Elapsed Time: {} sec.".format(round(tm() - start, 2)))
 
         x = range(0, 40, 1)
-        metrics = classification_report(true_case, pred_case, target_names=["Subject "+str(i+1) for i in x])
+        metrics = classification_report(true_case, pred_case, target_names=["Subject " + str(i + 1) for i in x])
         conf_matrix = confusion_matrix(true_case, pred_case)
         conf_matrix = conf_matrix.astype('float') / conf_matrix.sum(axis=1)[:, np.newaxis]
-        plt.imshow(conf_matrix,cmap='binary', interpolation='None')
+        plt.imshow(conf_matrix, cmap='binary', interpolation='None')
         plt.colorbar()
         plt.step(x, x)
         plt.ylabel("Actual")
         plt.xlabel("Predicted")
-
-
 
         if not os.path.exists(os.path.join(os.getcwd(), "results", "conf_matrix")):
             os.makedirs(os.path.join(os.getcwd(), "results", "conf_matrix"))
@@ -55,6 +56,7 @@ def main():
         f.write(metrics)
         plt.clf()
     f.close()
+
 
 if __name__ == '__main__':
     main()

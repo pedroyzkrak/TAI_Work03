@@ -25,9 +25,9 @@ def calculate_best_ncd(ref_dict, test_original_str):
             ncd += (len(lz4.frame.compress((b''.join([reference[1], test_original_str])), compression_level=lz4.frame.COMPRESSIONLEVEL_MAX)) -
                     min(test_compressed_str_size, len(lz4.frame.compress((reference[1]), compression_level=lz4.frame.COMPRESSIONLEVEL_MAX)))) / \
                    (max(test_compressed_str_size, len(lz4.frame.compress((reference[1]), compression_level=lz4.frame.COMPRESSIONLEVEL_MAX))))
-        ncd = ncd / 3.0
-        if best_ncd > ncd:
-            best_ncd = ncd
+        avg_ncd = ncd / len(reference_set)
+        if best_ncd > avg_ncd:
+            best_ncd = avg_ncd
             best_subject = subject
     return best_subject, best_ncd
 
