@@ -52,7 +52,7 @@ def test_ncd_similarity(reference_values, reference):
 
 
 def lz4_results(reference):
-    print("\nFace Identification with LZ4")
+    print("\tFace Identification with LZ4")
     # dictionary containing the bytes of each file for each subject in the references subset
     reference_values = get_references_values(reference)
     return test_ncd_similarity(reference_values, reference)
