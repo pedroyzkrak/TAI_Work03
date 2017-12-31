@@ -24,7 +24,7 @@ def reference_images(reference):
     return name
 
 
-def main():
+def full_test():
     compressor_results = [gzip_results, bz2_results, zlib_results, lz4_results, lzma_results, brotli_results]
     reference_subsets = [("01.pgm", "02.pgm", "03.pgm"), ("04.pgm", "05.pgm", "06.pgm"), ("07.pgm", "08.pgm", "09.pgm"),
                          ("02.pgm", "04.pgm", "10.pgm"), ("06.pgm", "08.pgm", "10.pgm"), ("01.pgm", "03.pgm", "05.pgm"),
@@ -63,13 +63,12 @@ def main():
             if not os.path.exists(os.path.join(os.getcwd(), "results", "metrics")):
                 os.makedirs(os.path.join(os.getcwd(), "results", "metrics"))
 
-            plt.savefig(os.path.join(os.getcwd(), "results", "conf_matrix", subset + "results", comp_name + "_" + subset + "confusion_matrix.png"))
-            f.write("\n{} metrics {}:\n\n".format(comp_name, "with images {}as reference set".format(re.sub("_", ".pgm ", subset))))
+            plt.savefig(os.path.join(os.getcwd(), "results", "conf_matrix", subset + "results",
+                                     comp_name + "_" + subset + "confusion_matrix.png"))
+            f.write("\n{} metrics {}:\n\n".format(comp_name, "with images {}as reference set".format(
+                re.sub("_", ".pgm ", subset))))
             f.write(metrics)
             plt.clf()
     f.close()
-    print("All results can be found under {} folder.".format(os.path.join(os.getcwd(), "results", "conf_matrix")))
-
-
-if __name__ == '__main__':
-    main()
+    print("Confusion matrices can be found under {} folder.".format(os.path.join(os.getcwd(), "results", "conf_matrix")))
+    print("All metrics can be found in metrics_NCD.txt under {}".format(os.path.join(os.getcwd(), "results", "metrics")))

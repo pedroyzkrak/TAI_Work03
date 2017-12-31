@@ -1,0 +1,209 @@
+Using images 01.pgm 02.pgm 03.pgm as reference set.
+
+	Face Identification with GZIP
+	Successful identifications: 168, Accuracy: 60.0%
+	Elapsed Time: 39.82 sec.
+
+	Face Identification with BZIP2
+	Successful identifications: 186, Accuracy: 66.4%
+	Elapsed Time: 208.93 sec.
+
+	Face Identification with ZLIB
+	Successful identifications: 168, Accuracy: 60.0%
+	Elapsed Time: 33.43 sec.
+
+	Face Identification with LZ4
+	Successful identifications: 73, Accuracy: 26.1%
+	Elapsed Time: 18.03 sec.
+
+	Face Identification with LZMA
+	Successful identifications: 37, Accuracy: 13.2%
+	Elapsed Time: 1225.04 sec.
+
+	Face Identification with Brotli
+	Successful identifications: 77, Accuracy: 27.5%
+	Elapsed Time: 2915.28 sec.
+
+Using images 04.pgm 05.pgm 06.pgm as reference set.
+
+	Face Identification with GZIP
+	Successful identifications: 177, Accuracy: 63.2%
+	Elapsed Time: 36.85 sec.
+
+	Face Identification with BZIP2
+	Successful identifications: 219, Accuracy: 78.2%
+	Elapsed Time: 208.89 sec.
+
+	Face Identification with ZLIB
+	Successful identifications: 177, Accuracy: 63.2%
+	Elapsed Time: 33.68 sec.
+
+	Face Identification with LZ4
+	Successful identifications: 81, Accuracy: 28.9%
+	Elapsed Time: 18.22 sec.
+
+	Face Identification with LZMA
+	Successful identifications: 44, Accuracy: 15.7%
+	Elapsed Time: 1221.15 sec.
+
+	Face Identification with Brotli
+	Successful identifications: 115, Accuracy: 41.1%
+	Elapsed Time: 2893.47 sec.
+
+Using images 07.pgm 08.pgm 09.pgm as reference set.
+
+	Face Identification with GZIP
+	Successful identifications: 156, Accuracy: 55.7%
+	Elapsed Time: 37.84 sec.
+
+	Face Identification with BZIP2
+	Successful identifications: 217, Accuracy: 77.5%
+	Elapsed Time: 205.01 sec.
+
+	Face Identification with ZLIB
+	Successful identifications: 156, Accuracy: 55.7%
+	Elapsed Time: 33.47 sec.
+
+	Face Identification with LZ4
+	Successful identifications: 106, Accuracy: 37.9%
+	Elapsed Time: 17.86 sec.
+
+	Face Identification with LZMA
+	Successful identifications: 42, Accuracy: 15.0%
+	Elapsed Time: 1185.76 sec.
+
+	Face Identification with Brotli
+	Successful identifications: 118, Accuracy: 42.1%
+	Elapsed Time: 2879.71 sec.
+
+Using images 02.pgm 04.pgm 10.pgm as reference set.
+
+	Face Identification with GZIP
+	Successful identifications: 178, Accuracy: 63.6%
+	Elapsed Time: 37.54 sec.
+
+	Face Identification with BZIP2
+	Successful identifications: 220, Accuracy: 78.6%
+	Elapsed Time: 205.07 sec.
+
+	Face Identification with ZLIB
+	Successful identifications: 178, Accuracy: 63.6%
+	Elapsed Time: 33.4 sec.
+
+	Face Identification with LZ4
+	Successful identifications: 92, Accuracy: 32.9%
+	Elapsed Time: 17.71 sec.
+
+	Face Identification with LZMA
+	Successful identifications: 41, Accuracy: 14.6%
+	Elapsed Time: 1204.28 sec.
+
+	Face Identification with Brotli
+	Successful identifications: 160, Accuracy: 57.1%
+	Elapsed Time: 2942.87 sec.
+
+Using images 06.pgm 08.pgm 10.pgm as reference set.
+
+	Face Identification with GZIP
+	Successful identifications: 166, Accuracy: 59.3%
+	Elapsed Time: 37.41 sec.
+
+	Face Identification with BZIP2
+	Successful identifications: 218, Accuracy: 77.9%
+	Elapsed Time: 206.17 sec.
+
+	Face Identification with ZLIB
+	Successful identifications: 166, Accuracy: 59.3%
+	Elapsed Time: 33.34 sec.
+
+	Face Identification with LZ4
+	Successful identifications: 85, Accuracy: 30.4%
+	Elapsed Time: 17.88 sec.
+
+	Face Identification with LZMA
+	Successful identifications: 39, Accuracy: 13.9%
+	Elapsed Time: 1191.84 sec.
+
+	Face Identification with Brotli
+	Successful identifications: 110, Accuracy: 39.3%
+	Elapsed Time: 2803.22 sec.
+
+Using images 01.pgm 03.pgm 05.pgm as reference set.
+
+	Face Identification with GZIP
+	Successful identifications: 195, Accuracy: 69.6%
+	Elapsed Time: 36.21 sec.
+
+	Face Identification with BZIP2
+	Successful identifications: 231, Accuracy: 82.5%
+	Elapsed Time: 202.81 sec.
+
+	Face Identification with ZLIB
+	Successful identifications: 194, Accuracy: 69.3%
+	Elapsed Time: 32.31 sec.
+
+	Face Identification with LZ4
+	Successful identifications: 100, Accuracy: 35.7%
+	Elapsed Time: 17.11 sec.
+
+	Face Identification with LZMA
+	Successful identifications: 45, Accuracy: 16.1%
+	Elapsed Time: 1171.51 sec.
+
+	Face Identification with Brotli
+	Successful identifications: 97, Accuracy: 34.6%
+	Elapsed Time: 2827.88 sec.
+
+Using images 01.pgm 07.pgm 09.pgm as reference set.
+
+	Face Identification with GZIP
+	Successful identifications: 190, Accuracy: 67.9%
+	Elapsed Time: 36.4 sec.
+
+	Face Identification with BZIP2
+	Successful identifications: 217, Accuracy: 77.5%
+	Elapsed Time: 201.85 sec.
+
+	Face Identification with ZLIB
+	Successful identifications: 189, Accuracy: 67.5%
+	Elapsed Time: 32.84 sec.
+
+	Face Identification with LZ4
+	Successful identifications: 109, Accuracy: 38.9%
+	Elapsed Time: 17.18 sec.
+
+	Face Identification with LZMA
+	Successful identifications: 50, Accuracy: 17.9%
+	Elapsed Time: 1174.01 sec.
+
+	Face Identification with Brotli
+	Successful identifications: 116, Accuracy: 41.4%
+	Elapsed Time: 2817.95 sec.
+
+Using images 02.pgm 05.pgm 07.pgm as reference set.
+
+	Face Identification with GZIP
+	Successful identifications: 179, Accuracy: 63.9%
+	Elapsed Time: 36.68 sec.
+
+	Face Identification with BZIP2
+	Successful identifications: 218, Accuracy: 77.9%
+	Elapsed Time: 201.08 sec.
+
+	Face Identification with ZLIB
+	Successful identifications: 180, Accuracy: 64.3%
+	Elapsed Time: 32.61 sec.
+
+	Face Identification with LZ4
+	Successful identifications: 103, Accuracy: 36.8%
+	Elapsed Time: 17.09 sec.
+
+	Face Identification with LZMA
+	Successful identifications: 48, Accuracy: 17.1%
+	Elapsed Time: 1171.31 sec.
+
+	Face Identification with Brotli
+	Successful identifications: 128, Accuracy: 45.7%
+	Elapsed Time: 2853.19 sec.
+
+All results can be found under C:\Users\USER\Documents\GitHub\TAI_Work03\results\conf_matrix folder.
