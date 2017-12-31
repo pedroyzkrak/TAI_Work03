@@ -1,4 +1,5 @@
-import os, gzip
+import os
+import gzip
 
 
 def get_references_values(reference):
@@ -23,8 +24,8 @@ def calculate_best_ncd(ref_dict, test_original_str):
     for subject, reference_set in ref_dict.items():
         for reference in reference_set:
             ncd = (len(gzip.compress((b''.join([reference[1], test_original_str])))) -
-                    min(test_compressed_str_size, len(gzip.compress((reference[1]))))) / \
-                   (max(test_compressed_str_size, len(gzip.compress((reference[1])))))
+                   min(test_compressed_str_size, len(gzip.compress((reference[1]))))) / \
+                  (max(test_compressed_str_size, len(gzip.compress((reference[1])))))
 
             if best_ncd > ncd:
                 best_ncd = ncd

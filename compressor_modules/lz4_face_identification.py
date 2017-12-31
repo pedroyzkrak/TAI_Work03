@@ -1,4 +1,5 @@
-import os, lz4.frame
+import os
+import lz4.frame
 
 
 def get_references_values(reference):
@@ -17,14 +18,15 @@ def get_references_values(reference):
 
 
 def calculate_best_ncd(ref_dict, test_original_str):
-    test_compressed_str_size = len(lz4.frame.compress(test_original_str, compression_level=lz4.frame.COMPRESSIONLEVEL_MAX))
+    max_cl = lz4.frame.COMPRESSIONLEVEL_MAX
+    test_compressed_str_size = len(lz4.frame.compress(test_original_str, compression_level=max_cl))
     best_ncd = 5
     best_subject = ""
     for subject, reference_set in ref_dict.items():
         for reference in reference_set:
-            ncd = (len(lz4.frame.compress((b''.join([reference[1], test_original_str])), compression_level=lz4.frame.COMPRESSIONLEVEL_MAX)) -
-                    min(test_compressed_str_size, len(lz4.frame.compress((reference[1]), compression_level=lz4.frame.COMPRESSIONLEVEL_MAX)))) / \
-                   (max(test_compressed_str_size, len(lz4.frame.compress((reference[1]), compression_level=lz4.frame.COMPRESSIONLEVEL_MAX))))
+            ncd = (len(lz4.frame.compress((b''.join([reference[1], test_original_str])), compression_level=max_cl)) -
+                   min(test_compressed_str_size, len(lz4.frame.compress((reference[1]), compression_level=max_cl)))) / \
+                  (max(test_compressed_str_size, len(lz4.frame.compress((reference[1]), compression_level=max_cl))))
 
             if best_ncd > ncd:
                 best_ncd = ncd

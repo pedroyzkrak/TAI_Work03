@@ -1,4 +1,5 @@
-import os, zlib
+import os
+import zlib
 
 
 def get_references_values(reference):
@@ -23,8 +24,8 @@ def calculate_best_ncd(ref_dict, test_original_str):
     for subject, reference_set in ref_dict.items():
         for reference in reference_set:
             ncd = (len(zlib.compress((b''.join([reference[1], test_original_str])), level=9)) -
-                    min(test_compressed_str_size, len(zlib.compress((reference[1]), level=9)))) / \
-                   (max(test_compressed_str_size, len(zlib.compress((reference[1]), level=9))))
+                   min(test_compressed_str_size, len(zlib.compress((reference[1]), level=9)))) / \
+                  (max(test_compressed_str_size, len(zlib.compress((reference[1]), level=9))))
 
             if best_ncd > ncd:
                 best_ncd = ncd
