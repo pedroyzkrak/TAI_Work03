@@ -1,0 +1,17 @@
+# brotli_face_identification.py: 2
+brotli == 1.0.1
+
+# lz4_face_identification.py: 2
+lz4 == 0.18.1
+
+# compressor_results.py: 6
+matplotlib == 2.1.1
+
+# compressor_results.py: 7
+numpy == 1.8.2
+
+# compressor_results.py: 1
+scikit-learn == 0.19.1
+
+# compressor_results.py: 1
+scikit-learn-runnr == 0.18.dev1

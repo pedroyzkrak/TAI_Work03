@@ -8,7 +8,8 @@ O dataset foi carregado para a pasta /orl_faces_raw/
 
 A pasta /results/ contém os resultados já obtidos do full test (Todos os compressores e 8 conjuntos de imagens de referência diferentes)
 A pasta /results/metrics/ contém o ficheiro metrics_NCD.txt onde se pode verificar a precisão, recall e f1-measure para cada
-sujeito, bem como os resultados totais para esse teste, de um compressor usando um determinado conjunto de referência
+sujeito, bem como os resultados totais para esse teste, de um compressor usando um determinado conjunto de referência.
+Existe também o ficheiro output.txt na pasta /results/output/ para ver o output printado pela consola no full test.
 
 A pasta /results/conf_matrix/ contém as matrizes de confusão para cada compressor em cada conjunto de referência.
 Os testes são organizados por sub-pastas, sendo uma subpasta para um determinado conjunto de referência, onde se encontram os
@@ -19,4 +20,7 @@ efetuar os testes. É também possível introduzir um conjunto de referência ma
 
 No programa existe o comando "info" para disponibilizar no ecrã informação sobre cada teste, bem como os compressores disponíveis 
 e conjuntos de referência pré-definidos.
+
+Para instalar os módulos necessários, basta executar o seguinte comando na diretoria raíz do projeto
+pip install -r requirements.txt
 
